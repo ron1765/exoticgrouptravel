@@ -2,18 +2,19 @@
 lock "~> 3.17.1"
 
 set :application, "exoticgrouptravel"
-set :repo_url, "git@github.com:asadmalik76/exoticgrouptravel.git"
+set :repo_url, "https://github.com/AhsanAkbar252/exoticgrouptravel.git"
+set :branch, 'main'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/#{fetch :application}"
+set :deploy_to, "/home/root/#{fetch :application}"
 
 
 # append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 # set :linked_dirs, fetch(:linked_dirs, []).push('public/system')
-set :linked_files, %w{config/master.key}
+# set :linked_files, %w{config/master.key}
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
