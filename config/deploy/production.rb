@@ -4,7 +4,7 @@
 # You can define all roles on a single server, or split them:
 
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
-server "82.180.132.184", user: "root", roles: %w{app db web}, other_property: :other_value
+server "82.180.132.184", user: "deploy", roles: %w{app db web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 # set :linked_files, %w{config/master.key}
