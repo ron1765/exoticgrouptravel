@@ -51,7 +51,7 @@ a {
 }
 
 .navTop {
-  padding: 1rem;
+  padding:0 1rem;
   background-color: #014957 !important;
   z-index: 1111;
 }
@@ -70,6 +70,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
 }
 
 .quickLiks ul li {
@@ -712,7 +713,7 @@ a {
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 8px;
   overflow: hidden;
-  min-height: 550px;
+  min-height: 555px;
 }
 
 .form {
@@ -733,11 +734,11 @@ a {
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 8px;
   overflow: hidden;
-  min-height: 500px;
+  min-height: 555px;
 }
 
 .customCardOne .cardTop a img {
-  max-height: 290px;
+  max-height: 277px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1009,6 +1010,7 @@ a {
 .finderForm {
   background-color: #0D0F1B;
   padding: 3rem 0;
+  display: none !important;
 }
 
 .feildDiv {
