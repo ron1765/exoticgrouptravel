@@ -18,12 +18,12 @@
         <span class="white upperLine text-center"> LET US SHOW YOU</span>
         <h1 class="bannerHeading white mt-2">THE WORLD</h1>
       </div>
-
       <div class="col-md-8 mx-auto mb-2 text-center">
       </div>
 
       <div class="col-md-8 mx-auto text-center mt-2 mt-md-4">
           <%= link_to 'Leave a Message' , leavemessage_path, class: 'bannerBtn center' %>
+          <a href="#tours" class="d-block "><i class="fa-solid fa-arrow-down scroll-down "></i></a>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@
 </div>  
 </section>
 
-<%= render partial: 'shared/search'  %>
+<%# <%= render partial: 'shared/search'  %>
 
  
 
@@ -50,7 +50,7 @@
         <div class="row mt-5">
 
           <div class="col-lg-8 px-1">
-            <h1 class="headingOne yellow ">EXPLORE THE WORLD YOUR WAY</h1>
+            <h1 class="headingOne yellow " id="tours">EXPLORE THE WORLD YOUR WAY</h1>
           </div>
           <div class="col-lg-8 ">
           </div>

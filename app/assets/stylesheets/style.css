@@ -1588,3 +1588,21 @@ a {
   *:first-child + html .digg_pagination {
     overflow: hidden; 
 }
+@keyframes arrowAnimate {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(25px);
+  }
+
+  
+}
+.scroll-down{
+  margin-top:2rem;
+  color: #fff;
+  font-size: 3rem;
+  animation: arrowAnimate 1s ease-in-out infinite;  
+}
