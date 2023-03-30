@@ -1,9 +1,9 @@
-<div class="customCardOne">
+<div class="customCardOne" style="min-height:577px">
 <div class="cardTop">
 
 <%= link_to tour_details_path(tour) do %>
   <% if tour.cover_image.attached? %>
-  <%= image_tag tour.cover_image, class: "img-fluid" %>
+  <%= image_tag tour.cover_image, class: "img-fluid" style:"max-height:240px !important;" %>
   <% end %>
 <% end %>
 </div>

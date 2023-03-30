@@ -734,11 +734,11 @@ a {
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 8px;
   overflow: hidden;
-  min-height: 555px;
+  min-height: 555px !important;
 }
 
 .customCardOne .cardTop a img {
-  max-height: 277px;
+  max-height: 237px !important;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
