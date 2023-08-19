@@ -2,22 +2,30 @@ default: &default
   adapter: postgresql
   encoding: unicode
   port:     5432
-  username: deploy
-  password: root@123
+  username: postgres
+  password: postgres
+
 
 development:
   <<: *default
   host:     localhost
   port:     5432
-  username: deploy
-  password: root@123
-  database: 'exoticgrouptravel'
+  username: postgres
+  password: postgres
+  database: 'goway_development'
 
-production:
+# production:
+#   <<: *default
+#   host:     82.180.132.184
+#   port:     5432
+#   username: postgres
+#   password: postgres
+#   database: 'goway_development'
+
+  production:
   <<: *default
-  host:     82.180.132.184
-  port:     5432
-  username: deploy
-  password: root@123
-  database: 'exoticgrouptravel'
+  url: <%= ENV['DATABASE_URL'] %>
+  database: mysite_production
+  username: mysite
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
 
