@@ -16,6 +16,6 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-      disk:
-        name: Disk
-        mountPath: /storage
+    disk:
+      name: Disk
+      mountPath: /storage
