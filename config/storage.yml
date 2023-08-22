@@ -4,7 +4,7 @@ test:
 
 local:
   service: Disk
-  root: ~/project/src/storage
+  root: <%= Rails.root.join("storage") %>
 
 production:
   service: Disk
